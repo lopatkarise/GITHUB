@@ -1,14 +1,7 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int func(int x) {
-	return x + 10;
-}
-void fill(int arr[], int size) {
-	for (size_t i = 0; i < size; i++)
-	{
-		arr[i] = size;
-	}
-}
+int func(int x);
+void fill(int arr[], int size);
 int arr[10];
 FILE* fp;
 
@@ -19,6 +12,15 @@ int main() {
 	if (fp)
 	{
 		fclose(fp);
+	}
+}
 
+int func(int x) {
+	return x + 10;
+}
+void fill(int arr[], int size) {
+	for (size_t i = 0; i < size; i++)
+	{
+		arr[i] = size;
 	}
 }
