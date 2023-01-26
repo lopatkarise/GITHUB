@@ -10,7 +10,10 @@ void fill(int arr[], int size) {
 	}
 }
 int arr[10];
+FILE* fp;
+
 int main() {
+	fopen_s(&fp, "test.txt", "w");
 	fill(arr, 10);
-	cout << "Hello world!" << func(20);
+	cout << "Hello world! " << func(20);
 }
