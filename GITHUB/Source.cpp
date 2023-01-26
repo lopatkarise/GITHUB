@@ -16,4 +16,9 @@ int main() {
 	fopen_s(&fp, "test.txt", "w");
 	fill(arr, 10);
 	cout << "Hello world! " << func(20);
+	if (fp)
+	{
+		fclose(fp);
+
+	}
 }
